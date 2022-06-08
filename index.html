@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Day</title>
+    <!-- ? CDN Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- ? CDN Talwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ? CSS de menu -->
+    <link rel="stylesheet" href="styles/menu.css">
+    <!-- ? CSS de calendario -->
+    <link rel="stylesheet" href="styles/calendar.css">
+</head>
+<body class="bg-red-50">
+    <header class="text-3xl text-center bg-red-500 text-white py-2">
+        My Day
+    </header>
+    <h1 class="text-center bg-red-500 text-white text-xl mt-10 w-5/6 rounded mx-auto">Tu dia es: 23 de junio</h1>
+    <div class="calendar bg-red-400 w-full text-sm">
+        <div class="calendar__info">
+            <div class="calendar__prev" id="prev-month"></div>
+            <div class="calendar__month text-white" id="month"></div>
+            <div class="calendar__year text-white" id="year"></div>
+            <div class="calendar__next" id="next-month"></div>
+        </div>
+    
+        <div class="calendar__week text-white text-lg">
+            <div class="calendar__day calendar__item">Lu</div>
+            <div class="calendar__day calendar__item">Ma</div>
+            <div class="calendar__day calendar__item">Mi</div>
+            <div class="calendar__day calendar__item">Ju</div>
+            <div class="calendar__day calendar__item">Vi</div>
+            <div class="calendar__day calendar__item">Sa</div>
+            <div class="calendar__day calendar__item">Do</div>
+        </div>
+    
+        <div class="calendar__dates text-white" id="dates"></div>
+    </div>
+    <main class="p-2">
+        <h2 class="text-red-500 text-xl font-bold text-center">Frase del dia:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maiores repudiandae ea tempora corporis suscipit repellendus sed assumenda quis neque expedita.</p>
+    </main>
+
+
+
+    <!-- ? Navegacion de menu -->
+    <nav class="navigation bg-red-400 text-red-100">
+        <ul>
+            <li class="list">
+                <a href="pages/personal.html" class="hover:text-red-500">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="pages/mensajes.html" class="hover:text-red-500">
+                    <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                    <span class="text">Mensajes</span>
+                </a>
+            </li>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text ">Inicio</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#" class="hover:text-red-500">
+                    <span class="icon"><ion-icon name="image-outline"></ion-icon></span>
+                    <span class="text">Photos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="pages/notas.html" class="hover:text-red-500">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="text">Notas</span>
+                </a>
+            </li>
+            <div class="indicator bg-red-500"></div>
+        </ul>
+    </nav>
+
+    <!-- & Inicio de scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>

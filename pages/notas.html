@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <!-- ? CDN Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- ? CDN Talwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ? CSS de menu -->
+    <link rel="stylesheet" href="../styles/menu.css">
+    <!-- ? CSS de notas -->
+    <link rel="stylesheet" href="../styles/notas.css">
+</head>
+<body class="bg-red-50">
+    <header class="text-3xl text-center bg-red-500 text-white py-2">
+        My Day
+    </header>
+
+    <main>
+        <form action="" class="pb-3">
+            <textarea class="w-5/6 mx-auto block b-area h-32 bg-transparent pl-2 text-red-500" placeholder="Escribe tu nota aqui"></textarea>
+            <div class="grid grid-cols-2"><label for="" class="text-center text-red-500 font-bold text-lg">Fondo</label>
+            <input type="color" class="w-20"></div>
+            <div class="grid grid-cols-2"><label for="" class="text-center inline-block text-red-500 font-bold text-lg">Texto</label>
+            <input type="color" class="w-20"></div>
+            <input type="submit" value="Agregar" class="bg-red-500 px-4 py-1 rounded-full shadow-lg text-white active:bg-red-600 mx-auto block mt-5">
+        </form>
+    </main>
+
+    <!-- ? Navegacion de menu -->
+    <nav class="navigation bg-red-400 text-red-100">
+        <ul>
+            <li class="list">
+                <a href="personal.html" class="hover:text-red-500">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">Personal</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="mensajes.html" class="hover:text-red-500">
+                    <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                    <span class="text">Mensajes</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="../index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text ">Inicio</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#" class="hover:text-red-500">
+                    <span class="icon"><ion-icon name="image-outline"></ion-icon></span>
+                    <span class="text">Photos</span>
+                </a>
+            </li>
+            <li class="list active">
+                <a href="notas.html" class="hover:text-red-500">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="text">Notas</span>
+                </a>
+            </li>
+            <div class="indicator bg-red-500"></div>
+        </ul>
+    </nav>
+
+    <!-- & Inicio de scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

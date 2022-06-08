@@ -1,0 +1,10 @@
+.b-area{
+    border: 2px solid rgb(239 68 68);
+    border-top: none;
+}
+.b-area:focus{
+    outline: 1px solid rgb(239 68 68);
+}
+form{
+    border-bottom: 2px solid rgb(239 68 68)
+}
